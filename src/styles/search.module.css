@@ -23,3 +23,11 @@ input {
 
   /* width: 100%; */
 }
+
+@media (max-width: 700px) {
+  .input {
+    margin: 3rem auto -3rem auto;
+    margin-right: 21%;
+    width: 60%;
+  }
+}

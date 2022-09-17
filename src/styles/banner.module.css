@@ -45,6 +45,19 @@
     justify-content: space-between;
     height: 70vh;
   }
+  .container h1 {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+  .container p {
+    margin-left: -0.8rem;
+    padding-right: 1rem;
+    font-size: 90%;
+  }
+  .container img {
+    width: 65%;
+    margin-left: 4.5rem;
+  }
   .container > * {
     margin: 1rem;
   }

@@ -14,6 +14,9 @@
   left: 0;
   z-index: 1;
 }
+.theNav {
+  display: flex;
+}
 
 .icons {
   flex: 1;
@@ -78,13 +81,19 @@
 }
 ul {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-between; */
 }
 
-nav {
-  flex: 2;
-  order: 3;
+nav ul {
+  display: flex;
+  width: 30rem;
+  align-items: center;
+  margin: 1rem;
+  margin-right: 17rem;
+  justify-content: space-between;
+  /* background-color: rebeccapurple; */
 }
+
 nav ul li {
   list-style: none;
   text-decoration: none;
@@ -162,28 +171,80 @@ nav ul li:hover > ul {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.963);
   border-radius: 5px;
+  width: 10rem;
+  margin-top: 0;
+  margin-left: 0;
+  padding-top: 0.3rem;
   /* transition: 3s ease; */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: space-around;
+    padding: 0.7rem 0 0 0;
+    /* justify-content: center; */
   }
   ul a {
     margin: 1rem;
     font-size: 80%;
   }
-  .header > * {
-    padding: 0.3rem 5rem;
-  }
+
   .logo {
     font-size: 2rem;
-    margin-right: 2rem;
+    /* margin-right: auto; */
     width: 100%;
     text-align: center;
+    margin: 0rem 0 -0.6rem 0;
+  }
+  .theNav {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    width: 100%;
+    margin-left: 0rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 5rem;
+    margin-right: 15rem;
+  }
+  nav ul li:nth-child(2) {
+    font-size: 0.9rem;
+    margin-top: 0.1rem;
+  }
+  nav ul li:hover > ul li {
+    /* background-color: rebeccapurple; */
+    margin: -1rem 0 -0.2rem 0;
+
+    font-size: 0.8rem;
+    /* position: absolute; */
+  }
+  nav ul li:hover > ul {
+    /* padding: -3rem auto; */
+    height: 6rem;
+    width: 23%;
+  }
+  .iconItem {
+    width: 2rem;
+  }
+  .icons span {
+    margin-top: -10px;
+    font-size: 90%;
+  }
+  .signin span {
+    /* margin-top: -5rem; */
+    position: absolute;
+    margin-top: 35px;
+  }
+  .cartTotal {
+    left: 1.3rem;
+    top: 0.3rem;
+    font-size: 90%;
+  }
+  .header .logo {
+    font-size: 1.5rem;
   }
 }

@@ -33,80 +33,82 @@ function Navbar() {
       <h3 className={classes.logo}>
         <Link to="/">Audio House</Link>
       </h3>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/products" className={classes.link}>
-              Products
-            </Link>
-          </li>
-          <li>
-            Categories
-            <ul className={classes.dropdown}>
-              <Link to="/products/headphones">
-                <li>Headphones</li>
+      <section className={classes.theNav}>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/products" className={classes.link}>
+                Products
               </Link>
-              <Link to="/products/earphones">
-                <li>Earphones</li>
+            </li>
+            <li>
+              Categories
+              <ul className={classes.dropdown}>
+                <Link to="/products/headphones">
+                  <li>Headphones</li>
+                </Link>
+                <Link to="/products/earphones">
+                  <li>Earphones</li>
+                </Link>
+
+                <Link to="/products/speakers">
+                  <li>Speakers</li>
+                </Link>
+              </ul>
+            </li>
+            <li>
+              <Link to="/contact" className={classes.link}>
+                Contact
               </Link>
+            </li>
+          </ul>
+        </nav>
 
-              <Link to="/products/speakers">
-                <li>Speakers</li>
-              </Link>
-            </ul>
-          </li>
-          <li>
-            <Link to="/contact" className={classes.link}>
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
+        <div className={classes.icons}>
+          {/* LOGOUT */}
 
-      <div className={classes.icons}>
-        {/* LOGOUT */}
-
-        {user ? (
-          <>
-            <span className={classes.username}>{user.username}</span>
-            {/* {console.log(user.username)} */}
+          {user ? (
+            <>
+              <span className={classes.username}>{user.username}</span>
+              {/* {console.log(user.username)} */}
+              <div className={classes.signin}>
+                <Link to="/">
+                  <AiOutlineUserDelete
+                    onClick={handleLogout}
+                    size="2.5rem"
+                    className={classes.iconItem}
+                  />
+                </Link>
+                <span>LOGOUT</span>
+                {openModal && <LogoutModal closeModal={setOpenModal} />}
+              </div>
+            </>
+          ) : (
             <div className={classes.signin}>
-              <Link to="/">
-                <AiOutlineUserDelete
-                  onClick={handleLogout}
+              <Link to="/signup">
+                <AiOutlineUserAdd size="2.5rem" className={classes.iconItem} />
+              </Link>
+              <span>SIGNUP</span>
+            </div>
+          )}
+          <>
+            <div className={classes.cart}>
+              <Link to="/cart">
+                <AiOutlineShoppingCart
                   size="2.5rem"
                   className={classes.iconItem}
                 />
+
+                {state.cart.length > 0 && (
+                  <span className={classes.cartTotal}>{state.cart.length}</span>
+                )}
+                {/* {JSON.parse(localStorage.getItem("cart"))} */}
               </Link>
-              <span>LOGOUT</span>
-              {openModal && <LogoutModal closeModal={setOpenModal} />}
+              <span>CART</span>
             </div>
           </>
-        ) : (
-          <div className={classes.signin}>
-            <Link to="/signup">
-              <AiOutlineUserAdd size="2.5rem" className={classes.iconItem} />
-            </Link>
-            <span>SIGNUP</span>
-          </div>
-        )}
-        <>
-          <div className={classes.cart}>
-            <Link to="/cart">
-              <AiOutlineShoppingCart
-                size="2.5rem"
-                className={classes.iconItem}
-              />
-
-              {state.cart.length > 0 && (
-                <span className={classes.cartTotal}>{state.cart.length}</span>
-              )}
-              {/* {JSON.parse(localStorage.getItem("cart"))} */}
-            </Link>
-            <span>CART</span>
-          </div>
-        </>
-      </div>
+        </div>
+      </section>
     </header>
   );
 }

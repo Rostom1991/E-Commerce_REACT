@@ -62,3 +62,8 @@
   top: 0.3rem;
   left: 2.7rem;
 }
+@media (max-width: 700px) {
+  .card {
+    padding: 2%;
+  }
+}
