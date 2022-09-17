@@ -44,7 +44,8 @@ function SignUp() {
         password: passwordRef.current.value,
       };
       await axios
-        .post("http://localhost:5000/auth/signup", user1)
+        .post("https://friendly-jacket-fawn.cyclic.app/auth/signup", user1)
+        // .post("http://localhost:5000/auth/signup", user1)
         .then((response) => {
           if (response.status === 200) {
             console.log(response.data);

@@ -17,7 +17,8 @@ function ContactForm() {
       message: messageRef.current.value,
     };
     await axios
-      .post("http://localhost:5000/contact", msg)
+      .post("https://friendly-jacket-fawn.cyclic.app/contact", msg)
+      // .post("http://localhost:5000/contact", msg)
       .then((response) => {
         console.log("message sent");
         console.log(response.data);

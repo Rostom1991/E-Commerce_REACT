@@ -13,7 +13,8 @@ function Home() {
     setTimeout(() => {
       setSpinner(false);
     }, 700);
-    fetch("http://localhost:5000/product")
+    fetch("https://friendly-jacket-fawn.cyclic.app/product")
+      // fetch("http://localhost:5000/product")
       .then((res) => res.json())
       .then((data) => {
         for (const key in data) {

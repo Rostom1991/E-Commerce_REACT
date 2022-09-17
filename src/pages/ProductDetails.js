@@ -29,7 +29,8 @@ function ProductDetails() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/product/${params.id}`)
+      .get(`https://friendly-jacket-fawn.cyclic.app/product/${params.id}`)
+      // .get(`http://localhost:5000/product/${params.id}`)
       .then((response) => {
         setProduct(response.data);
         console.log("data:", response.data);

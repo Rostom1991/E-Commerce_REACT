@@ -39,7 +39,8 @@ function Order() {
     console.log("order", order);
     //module de paiement ...
     await axios
-      .post("http://localhost:5000/order", order)
+      .post("https://friendly-jacket-fawn.cyclic.app/order", order)
+      // .post("http://localhost:5000/order", order)
       .then((response) => {
         console.log("success", response.data);
         setCheckoutModal(true);
