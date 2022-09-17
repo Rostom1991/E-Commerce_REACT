@@ -1,0 +1,64 @@
+.card {
+  height: 21rem;
+  max-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 245, 245);
+  margin: 1.5rem;
+  padding: 1%;
+  border-radius: 5px;
+  transition: 0.7s ease;
+  position: relative;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.img {
+  height: 13rem;
+  width: 100%;
+  background-color: white;
+}
+.img:hover {
+  cursor: pointer;
+}
+.title {
+  margin-top: 0.5rem;
+}
+
+.price {
+  margin: 0.1rem;
+  font-size: 1rem;
+}
+.btn {
+  margin-top: 0.2rem;
+  width: 100%;
+  /* height: 100%; */
+  font-size: 0.9rem;
+  padding: 7px;
+  padding-left: 1.5rem;
+  background: none;
+  background-color: rgb(102, 213, 216);
+  border: none;
+  position: relative;
+  border-radius: 5px;
+}
+.btn:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  /* background-color: yellow; */
+  margin: 0;
+  padding: 0;
+}
+.cartIcon {
+  /* margin: 0 1rem; */
+  position: absolute;
+  top: 0.3rem;
+  left: 2.7rem;
+}

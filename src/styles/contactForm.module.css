@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.443);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-family: "Mouse Memoirs";
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+
+.inputs > * {
+  margin: 1rem 0;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  height: 5rem;
+  outline: none;
+  padding: 0.5rem;
+  border: none;
+}
+.form button {
+  height: 2.3rem;
+  background: none;
+  border: none;
+  background: rgb(44, 198, 203);
+  font-family: "Mouse Memoirs";
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+button:hover {
+  cursor: pointer;
+  color: white;
+}

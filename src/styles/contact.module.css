@@ -1,0 +1,79 @@
+.container {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.475);
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact h1 {
+  font-size: 2.7rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  font-family: "Mouse Memoirs";
+  letter-spacing: 2px;
+}
+
+.bothSections {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.rightSection {
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 3rem 3rem 3rem;
+}
+
+.iconsContact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  font-size: 0.8rem;
+}
+
+.logoAndSpan {
+  width: 20rem;
+  display: flex;
+  align-items: center;
+}
+.logoAndSpan span {
+  font-size: 1.3rem;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20rem;
+}
+.iconBg {
+  background-color: white;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+}
+.icon {
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .bothSections {
+    display: flex;
+    flex-direction: column;
+  }
+}

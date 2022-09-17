@@ -1,0 +1,51 @@
+.img {
+  width: 20rem;
+}
+.container {
+  margin: 2rem auto 0rem auto;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.603);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+@keyframes title {
+  50% {
+    color: rgb(0, 109, 109);
+  }
+  50% {
+    color: white;
+  }
+}
+.leftSection h1 {
+  margin-top: 0.5rem;
+  font-size: 4rem;
+  position: relative;
+  color: rgb(0, 109, 109);
+  animation-name: title;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+.leftSection p {
+  position: absolute;
+  margin-left: 5rem;
+  font-style: italic;
+}
+.leftSection h3 {
+  position: absolute;
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+  }
+  .container > * {
+    margin: 1rem;
+  }
+}

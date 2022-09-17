@@ -1,0 +1,25 @@
+.input {
+  /* background-color: rgb(229, 189, 10); */
+  /* background-color: rgb(3, 189, 158); */
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.2rem;
+  margin: 5rem auto 0rem auto;
+  /* padding: 5rem; */
+  position: relative;
+}
+
+input {
+  border: none;
+  outline: lime;
+  /* height: 5rem; */
+  margin: auto;
+  flex: 1;
+  padding: 1rem;
+  font-family: "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  /* width: 100%; */
+}

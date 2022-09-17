@@ -1,0 +1,40 @@
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.buttons button {
+  width: 50%;
+  margin: 0.11rem;
+  border-radius: 15px;
+}
+.buttons :nth-child(1) {
+  background-color: rgb(102, 213, 216);
+  color: white;
+  border: none;
+  padding: 0.2rem;
+}
+.buttons :nth-child(2) {
+  background-color: rgb(239, 0, 0);
+  color: white;
+  border: none;
+}
+
+.buttons button:nth-child(1):hover {
+  background-color: rgb(0, 142, 147);
+}
+.buttons button:nth-child(2):hover {
+  background-color: rgb(168, 9, 9);
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    align-items: center;
+  }
+  .container button {
+    width: 5rem;
+  }
+}

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap");
+.header {
+  /* background-color: rgb(102, 213, 216); */
+  background-color: rgba(255, 255, 255, 0.941);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.7rem 5rem;
+  box-shadow: rgb(27, 195, 207) 0px 1px 20px 1px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.icons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  order: 4;
+}
+.iconItem {
+  transition: 0.4s ease-in-out;
+}
+.iconItem:hover {
+  cursor: pointer;
+
+  transform: scale(1.1);
+}
+.icons > * {
+  margin: 0 0.5rem;
+}
+
+.logo {
+  flex: 1;
+  font-size: 2.2rem;
+  font-family: "Mouse Memoirs";
+  font-weight: 300;
+  margin-left: 2rem;
+  cursor: pointer;
+  /* transition: 1s ease-in-out; */
+}
+
+.logo a:hover {
+  color: rgb(3, 177, 180);
+  box-shadow: 0 0 5px 5px rgb(3, 177, 180);
+  padding: 0.5rem;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.7rem;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.7rem;
+  position: relative;
+}
+.cart span {
+  margin-left: 0.5rem;
+}
+.cart a {
+  color: black;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav {
+  flex: 2;
+  order: 3;
+}
+nav ul li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: rgb(4, 126, 156);
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li:hover {
+  cursor: pointer;
+  color: black;
+}
+.link {
+  text-decoration: none;
+  color: rgb(4, 126, 156);
+}
+.link:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.signin a {
+  color: black;
+}
+.cartTotal {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  background-color: red;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.spinner {
+  color: rgb(102, 213, 216);
+  box-shadow: 0 0 5px 5px rgb(102, 213, 216);
+  margin: 5rem 47rem;
+}
+.username {
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(60, 150, 154);
+  height: 100%;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.dropdown {
+  display: none;
+  padding: 1rem;
+}
+.dropdown li {
+  margin: 0.5rem 0;
+  font-family: "poppins";
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.dropdown li a {
+  text-decoration: none;
+  list-style: none;
+}
+.dropdown li:hover {
+  color: rgb(97, 97, 97);
+  text-decoration: none;
+  list-style: none;
+  font-style: italic;
+}
+nav ul li:hover > ul {
+  display: block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.963);
+  border-radius: 5px;
+  /* transition: 3s ease; */
+}
+
+@media (max-width: 700px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-around;
+  }
+  ul a {
+    margin: 1rem;
+    font-size: 80%;
+  }
+  .header > * {
+    padding: 0.3rem 5rem;
+  }
+  .logo {
+    font-size: 2rem;
+    margin-right: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+}

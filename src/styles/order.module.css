@@ -1,0 +1,151 @@
+.form {
+  background-color: rgba(255, 255, 255, 0.379);
+  height: 100%;
+  width: 100%;
+  /* margin: auto; */
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  font-family: "monaco";
+  padding: 4rem;
+}
+.formSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 2;
+  padding-left: 2rem;
+}
+.formSection label {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+}
+.formSection input {
+  width: 15rem;
+  background-color: white;
+
+  margin-right: 1rem;
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: center; */
+}
+.productSection {
+  padding-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.863);
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-right: 10rem;
+  /* width: 50rem; */
+}
+.formSection section {
+  margin-top: 2rem;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-areas: 5rem; */
+  grid-template-rows: 1fr;
+  /* justify-content: flex-start;
+  place-items: flex-start; */
+
+  /* grid-template-columns: min-content; */
+  gap: 1rem;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  /* background-color: red; */
+  /* margin: auto; */
+}
+.form button {
+  width: 15rem;
+  height: 2.5rem;
+  background: none;
+  border: none;
+  font-family: "poppins";
+  transition: 1s ease;
+  background-color: aquamarine;
+  position: absolute;
+  /* margin-left: 3rem; */
+  /* margin-right: auto; */
+}
+.form button:hover {
+  background-color: rgb(0, 136, 91);
+  color: white;
+}
+.form label {
+  font-size: 0.9rem;
+}
+.product img {
+  width: 6rem;
+  height: 6rem;
+  background: white;
+  border-radius: 5px;
+}
+.product {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem 0;
+}
+.totalCheckout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2rem 0;
+}
+.form h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.alert {
+  background-color: cadetblue;
+  width: 50rem;
+}
+
+.cash {
+  animation-name: cash;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  color: white;
+  font-size: 0.8rem;
+  /* background-color: red; */
+  border-radius: 2px;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+  /* transition: 2s ease; */
+}
+@keyframes cash {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: rgb(145, 0, 0);
+  }
+}
+
+@media (max-width: 700px) {
+  .form {
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: flex-end; */
+  }
+  .formSection section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productSection {
+    margin-top: 4rem;
+    display: grid;
+    place-content: center;
+    margin: 4rem auto auto auto;
+    width: 100%;
+  }
+}

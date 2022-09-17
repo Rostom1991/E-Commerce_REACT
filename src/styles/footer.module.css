@@ -1,0 +1,33 @@
+.icons {
+  /* width: 30rem; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.603); */
+  /* position: absolute; */
+  height: 100%;
+  color: whitesmoke;
+}
+
+.container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.342);
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  bottom: 0;
+}
+
+/* .container p {
+  margin-bottom: -1rem;
+} */
+.container a:hover {
+  cursor: pointer;
+  color: rgb(0, 98, 116);
+}
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
