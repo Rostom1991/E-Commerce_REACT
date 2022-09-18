@@ -96,7 +96,7 @@
   align-items: center;
   background-color: red;
 } */
-@media (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
   .container {
     height: 100%;
     display: flex;

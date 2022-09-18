@@ -178,7 +178,7 @@ nav ul li:hover > ul {
   /* transition: 3s ease; */
 }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
   .header {
     width: 100%;
     display: flex;
@@ -188,11 +188,17 @@ nav ul li:hover > ul {
   }
   ul a {
     margin: 1rem;
-    font-size: 80%;
+    font-size: 70%;
+  }
+  .icons {
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 5rem;
   }
 
   .logo {
-    font-size: 2rem;
+    font-size: 1.7rem;
     /* margin-right: auto; */
     width: 100%;
     text-align: center;
@@ -201,38 +207,41 @@ nav ul li:hover > ul {
   .theNav {
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
+    align-items: center;
     width: 100%;
-    margin-left: 0rem;
+
+    /* flex-direction: column; */
+    /* margin-left: 0rem; */
   }
   nav ul {
     display: flex;
     justify-content: flex-start;
-    width: 5rem;
-    margin-right: 15rem;
+    width: 0rem;
+    /* margin-right: 15rem; */
+    margin-left: 4rem;
   }
   nav ul li:nth-child(2) {
-    font-size: 0.9rem;
-    margin-top: 0.1rem;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
   }
   nav ul li:hover > ul li {
     /* background-color: rebeccapurple; */
-    margin: -1rem 0 -0.2rem 0;
+    margin: -0.5rem 0 -0.1rem 0;
 
     font-size: 0.8rem;
     /* position: absolute; */
   }
   nav ul li:hover > ul {
     /* padding: -3rem auto; */
-    height: 6rem;
-    width: 23%;
+    height: 7rem;
+    width: 25%;
   }
   .iconItem {
     width: 2rem;
   }
   .icons span {
     margin-top: -10px;
-    font-size: 90%;
+    font-size: 80%;
   }
   .signin span {
     /* margin-top: -5rem; */
@@ -246,5 +255,17 @@ nav ul li:hover > ul {
   }
   .header .logo {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 610px) and (max-width: 1200px) {
+  header {
+    background-color: red;
+    flex-direction: column;
+    margin: 0;
+  }
+  nav ul {
+    flex-direction: column;
+    margin: 0;
   }
 }

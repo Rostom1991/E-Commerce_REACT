@@ -24,7 +24,7 @@ input {
   /* width: 100%; */
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   .input {
     margin: 3rem auto -3rem auto;
     margin-right: 21%;
